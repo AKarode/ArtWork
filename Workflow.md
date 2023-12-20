@@ -15,6 +15,7 @@ Creating of Post (Matt) :
 - title of post
 - file upload
 - checking of file size
+- move things into component and refactor
 
 User profile (Hala):
 - name
