@@ -1,0 +1,23 @@
+.create-project-button {
+    background-color: #030000;
+    font-size: 20px;
+    padding: 20px 40px;
+
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: black;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.create-project-button.hover {
+    background-color: #000200;
+}
