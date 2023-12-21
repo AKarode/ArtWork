@@ -1,7 +1,7 @@
 import React from 'react'
-import user_icon from '../Assets/user.svg' 
-import mail_icon from '../Assets/mail.svg' 
-import lock_icon from '../Assets/lock.svg' 
+import user_icon from '../../components/assets/user.svg'
+import mail_icon from '../../components/assets/mail.svg'
+import lock_icon from '../../components/assets/lock.svg'
 import './LoginSignup.css'
 
 
