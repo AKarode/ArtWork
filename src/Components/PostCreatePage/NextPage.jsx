@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
-import './PostCreatePage/NextPage.css';
+import './NextPage.css';
 
 const NextPage = () => {
     const [location, setLocation] = useState('');

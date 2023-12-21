@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PostCreatePage/CreatePostPage.css';
+import './CreatePostPage.css';
 import { useNavigate } from 'react-router-dom';
 
 const CreatePostPage = () => {
