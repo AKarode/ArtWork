@@ -1,5 +1,4 @@
 import React from 'react';
-import './UserPage.css';
 import {
   MDBCol,
   MDBContainer,
@@ -17,6 +16,9 @@ import {
   MDBListGroup,
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import './UserPage.css';
 
 function UserPage() {
   return (
