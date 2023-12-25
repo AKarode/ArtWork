@@ -1,5 +1,4 @@
 import React from 'react';
-import './UserPage.css';
 import {
   MDBCol,
   MDBContainer,
@@ -17,10 +16,14 @@ import {
   MDBListGroup,
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import './UserPage.css';
 
 function UserPage() {
   return (
-    <section style={{ backgroundColor: '#eee' }}>
+    // <section style={{ backgroundColor: '#eee' }}>
+    <section>
       <MDBContainer className="py-5">
         <MDBRow>
           <MDBCol>
@@ -41,16 +44,17 @@ function UserPage() {
             <MDBCard className="mb-4">
               <MDBCardBody className="text-center">
                 <MDBCardImage
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                 // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                  src = "/src/Components/UserPage/headshot.JPG"
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: '150px' }}
                   fluid />
                 <p className="text-muted mb-1">Film Director</p>
-                <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                <p className="text-muted mb-4">Boston, Ma</p>
                 <div className="d-flex justify-content-center mb-2">
                   <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
+                  <MDBBtn outline className="ms-1" onClick={() => { alert("ssss") }}>Message</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
@@ -62,14 +66,14 @@ function UserPage() {
                     <MDBIcon fas icon="globe fa-lg text-warning" />
                     <MDBCardText>https://myFilmSite.com</MDBCardText>
                   </MDBListGroupItem>
-                  <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
+                  {/* <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="github fa-lg" style={{ color: '#333333' }} />
                     <MDBCardText>myFilms</MDBCardText>
-                  </MDBListGroupItem>
-                  <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
+                  </MDBListGroupItem> */}
+                  {/* <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="twitter fa-lg" style={{ color: '#55acee' }} />
                     <MDBCardText>@myFilms</MDBCardText>
-                  </MDBListGroupItem>
+                  </MDBListGroupItem> */}
                   <MDBListGroupItem className="d-flex justify-content-between align-items-center p-3">
                     <MDBIcon fab icon="instagram fa-lg" style={{ color: '#ac2bac' }} />
                     <MDBCardText>myFilms</MDBCardText>
@@ -90,7 +94,7 @@ function UserPage() {
                     <MDBCardText>Full Name</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Johnatan Smith</MDBCardText>
+                    <MDBCardText className="text-muted">Hala Gilbert</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -99,11 +103,11 @@ function UserPage() {
                     <MDBCardText>Email</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">example@example.com</MDBCardText>
+                    <MDBCardText className="text-muted">halagilbert@gmail.com</MDBCardText>
                   </MDBCol>
                 </MDBRow>
                 <hr />
-                <MDBRow>
+                {/* <MDBRow>
                   <MDBCol sm="3">
                     <MDBCardText>Phone</MDBCardText>
                   </MDBCol>
@@ -111,10 +115,10 @@ function UserPage() {
                     <MDBCardText className="text-muted">(097) 234-5678</MDBCardText>
                   </MDBCol>
                 </MDBRow>
-                <hr />
+                <hr /> */}
                 <MDBRow>
                   <MDBCol sm="3">
-                    <MDBCardText>School / Location</MDBCardText>
+                    <MDBCardText>School</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
                     <MDBCardText className="text-muted">Northeastern University</MDBCardText>

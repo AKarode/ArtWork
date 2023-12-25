@@ -1,7 +1,7 @@
 import React from 'react';
 import './ChatList.css';
 import searchIcon from '../Assets/search-icon.png';
-import composeIcon from '../Assets/compose-message.png';
+// import composeIcon from './Components/Assets/compose-message.png';
 
 const mockChats = [
   { id: 1, name: 'User 1', lastMessage: 'Hello', timestamp: '10:30 AM' },
@@ -16,7 +16,7 @@ function ChatList() {
         <h1>Messages</h1>
         <div>
           <button><img src={searchIcon} alt="Search" className="header-icon" /></button>
-          <button><img src={composeIcon} alt="Compose" className="header-icon" /></button>
+          {/* <button><img src={composeIcon} alt="Compose" className="header-icon" /></button> */}
         </div>
       </div>
       {mockChats.map((chat) => (
