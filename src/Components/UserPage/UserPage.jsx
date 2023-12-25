@@ -54,7 +54,7 @@ function UserPage() {
                 <p className="text-muted mb-4">Boston, Ma</p>
                 <div className="d-flex justify-content-center mb-2">
                   <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
+                  <MDBBtn outline className="ms-1" onClick={() => { alert("ssss") }}>Message</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
