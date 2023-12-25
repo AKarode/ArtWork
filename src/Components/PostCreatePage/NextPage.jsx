@@ -5,8 +5,6 @@ import './NextPage.css';
 
 const NextPage = () => {
     const [location, setLocation] = useState('');
-    const [startDate, setStartDate] = useState(new Date());
-    const [endDate, setEndDate] = useState(new Date());
     const [photos, setPhotos] = useState([]);
     const [files, setFiles] = useState([])
     const navigate = useNavigate();

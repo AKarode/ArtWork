@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import CreatePostPage from './PostCreatePage/CreatePostPage.jsx';
-import NextPage from './PostCreatePage/NextPage.jsx';
-import CreateProjectButton from './PostCreatePage/CreateProjectButton.jsx';
+import CreatePostPage from './CreatePostPage.jsx';
+import NextPage from './NextPage.jsx';
+import CreateProjectButton from './CreateProjectButton.jsx';
 
-const App = () => {
+const PostCreateContainer = () => {
   return (
     <Router>
       <Routes>
@@ -17,4 +17,4 @@ const App = () => {
 };
 
 
-export default App;
+export default PostCreateContainer;
