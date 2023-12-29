@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import UserPage from './Components/UserPage/UserPage.jsx';
-// import Messaging from './Components/Messaging/Messaging.jsx';
-// import ChatList from './Components/Messaging/ChatList.jsx';
+import Logo from './Components/Logo/Logo.jsx';
+import App from './Components/App/App.jsx';
+
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <Messaging/>
-    <ChatList/> */}
-    {/* <UserPage/> */}
+  {/*All Routes have been moved to App.jsx keep this file clean*/}
+   
+   <App/>
   </React.StrictMode>,
 )
