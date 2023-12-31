@@ -18,6 +18,6 @@
     color: white;
 }
 
-.create-project-button.hover {
+.create-project-button:hover {
     background-color: #000200;
 }

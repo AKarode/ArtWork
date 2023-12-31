@@ -18,7 +18,7 @@ const CreatePostPage = () => {
     };
 
     const handleNext = () => {
-        navigate('/next-page');
+        navigate('/post/next-page');
     }
 
     const autoExpand = (e) => {

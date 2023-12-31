@@ -3,10 +3,10 @@ import './CreateProjectButton.css';
 import { useNavigate } from 'react-router-dom';
 
 const CreateProjectButton = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   
   const handleClick = () => {
-    navigate('/create'); // Make sure the route matches your Router setup
+    navigate('/post/create-project'); // Make sure the route matches your Router setup
   };
 
   return (

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import DatePicker from 'react-datepicker';
 import './NextPage.css';
 
 const NextPage = () => {
@@ -10,7 +9,7 @@ const NextPage = () => {
     const navigate = useNavigate();
 
     const handleBack = () => {
-        navigate('/create');
+        navigate('/create-project');
     };
 
     const handleLocationChange = (e) => {
