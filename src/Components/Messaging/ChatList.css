@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 200px;
-    height: 100vh;
+    width: 300px;
+    height: 859px;
     background-color: #f0f0f0;
     border-right: 2px solid #000;
    }
@@ -69,6 +69,6 @@
   }
 
   .header-icon {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
