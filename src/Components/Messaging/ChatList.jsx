@@ -4,12 +4,12 @@ import searchIcon from '../Assets/search-icon.png';
 import composeIcon from '../Assets/compose-message.png';
 
 const mockChats = [
-  { id: 1, name: 'User 1', lastMessage: 'Hello', timestamp: '10:30 AM' },
-  { id: 2, name: 'User 2', lastMessage: 'Hey there', timestamp: '11:15 AM' },
-  { id: 3, name: 'User 3', lastMessage: 'Wassup', timestamp: '12:45 PM' },
+  { id: 1, name: 'User 1', messages: [{ content: 'Hello', timestamp: '12:45 PM', sender: 'them' }] },
+  { id: 2, name: 'User 2', messages: [{ content: 'Hey there', timestamp: '11:15 AM', sender: 'them' }] },
+  { id: 3, name: 'User 3', messages: [{ content: 'Wassup', timestamp: '10:30 AM', sender: 'them' }] },
 ];
 
-function ChatList() {
+function ChatList({ openChat }) {
   return (
     <div className="chatlist-container">
       <div className="chatlist-header">
@@ -20,10 +20,10 @@ function ChatList() {
         </div>
       </div>
       {mockChats.map((chat) => (
-        <div key={chat.id} className="chatlist-item">
+        <div key={chat.id} className="chatlist-item" onClick={() => openChat(chat)}>
           <p className="chatlist-name">{chat.name}</p>
-          <button className="chatlist-last-message">{chat.lastMessage}
-          <span classname = "Chatlist-timestamp">{chat.timestamp}</span>
+          <button className="chatlist-last-message">{chat.messages[chat.messages.length - 1].content}
+            <span className="Chatlist-timestamp">{chat.messages[chat.messages.length - 1].timestamp}</span>
           </button>
         </div>
       ))}
