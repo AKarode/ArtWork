@@ -5,44 +5,81 @@
     margin: auto; 
     padding: 20px;
     font-family: 'Arial', sans-serif;
+    color: white;
 }
 
-.location-container {
-    display: flex;
-    width: 50%;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
+.location-container,
 .calandar-container {
     display: flex;
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.photo-upload-container {
-    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Adjust spacing between elements */
     width: 50%;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #4B0082; /* Dark purple background */
+    color: white; /* White text for contrast */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Increase border-radius for rounded corners */
     box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.photo-upload-container,
 .file-upload-container {
     display: flex;
-    width: 50%;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Adjust spacing between elements */
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #4B0082; /* Dark purple background */
+    color: white; /* White text for contrast */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Increase border-radius for rounded corners */
     box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.location-container h3,
+.calandar-container h3,
+.photo-upload-container h3,
+.file-upload-container h3 {
+    margin: 0;
+    font-size: 18px; /* Larger font size for visibility */
+    font-weight: bold;
+}
+
+.location-container input[type="text"],
+.calandar-container input[type="date"],
+.photo-upload-container input[type="file"],
+.file-upload-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Lighter border for input field */
+    border-radius: 10px; /* Rounded corners for input field */
+    font-size: 16px; /* Font size for input text */
+    color: #333; /* Darker text color for input */
+    background-color: white; /* White background for input field */
+    box-shadow: black;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.back-button,
+.cancel-button,
+.save-button,
+.post-button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #000; 
+    color: #fff;
+    cursor: pointer;
+}
+
